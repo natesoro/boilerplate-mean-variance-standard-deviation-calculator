@@ -5,7 +5,7 @@ def calculate(list):
     if (len(list)<9):
         raise ValueError('List must contain nine numbers.')
     
-    a2=np.array(list).reshape(3,3)
+    a2=np.array(list, float).reshape(3,3)
 
     mean1=np.mean(a2, axis=0).tolist()
     mean2=np.mean(a2, axis=1).tolist()
